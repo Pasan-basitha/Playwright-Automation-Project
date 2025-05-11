@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
 test('Product Page Test', async ({ page }) => {
     // Go to the URL
     await page.goto('https://www.saucedemo.com/'); 
-
+    
     //Enter Username
     await page.fill('//input[@id="user-name"]', 'standard_user');
     //Enter Password
@@ -69,7 +69,7 @@ test('Product Page Test', async ({ page }) => {
     //Enter Last Name
     await page.fill("//input[@id='last-name']", 'Basitha');
     //Enter Postal Code
-    await page.fill("//input[@id='postal-code']", '123456');
+    await page.fill("//input[@id='postal-code']", '9899');
     //Click Continue button
     await page.click("//input[@id='continue']");
 
